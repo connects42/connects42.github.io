@@ -192,6 +192,10 @@ defaults:
     values:
       layout: page
       permalink: /:title/
+  - scope:
+      path: "assets/css"
+    values:
+      cache_control: "no-cache, no-store, must-revalidate"
 
 sass:
   style: compressed
