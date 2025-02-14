@@ -1,0 +1,1 @@
+today was pretty chill. i am slowly but surely probably flunking theology but at least i got 91% on the networking exam. so... worth?
