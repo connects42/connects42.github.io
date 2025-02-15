@@ -62,6 +62,16 @@ class BlogPostCreator:
                 
         return '\n'.join(processed_lines)
 
+    def get_next_page_number(self):
+        posts_dir = '_posts'
+        if not os.path.exists(posts_dir):
+            return 1
+            
+        # Get all md files excluding droid pages
+        files = [f for f in os.listdir(posts_dir) 
+                 if f.endswith('.md') and 'droid' not in f.lower()]
+        return len(files) + 1
+
     def create_post(self):
         title = self.title_entry.get().strip()
         if not title:
@@ -72,7 +82,9 @@ class BlogPostCreator:
         date_str = now.strftime("%Y-%m-%d")
         time_str = now.strftime("%Y-%m-%d %H:%M:%S +0800")
         
-        filename = f"{date_str}-{title.lower().replace(' ', '-')}.md"
+        # Get next page number and create filename
+        page_number = self.get_next_page_number()
+        filename = f"{date_str}-page{page_number}.md"
         filepath = os.path.join('_posts', filename)
         
         categories = [cat.strip() for cat in self.categories_entry.get().split(',') if cat.strip()]
