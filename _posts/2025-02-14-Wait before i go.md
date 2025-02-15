@@ -1,3 +1,7 @@
+---
+date: 2025-02-14 03:00:00 +0800
+---
+
 It says something like `1 min read` on the top right. How does it know that it'll only take a minute to read? that's pretty interesting...<br>
 
 # Please don't mind the rest of this post:

@@ -1,1 +1,5 @@
-today was pretty chill. i am slowly but surely probably flunking theology but at least i got 91% on the networking exam. so... worth?
+---
+date: 2025-02-14 05:00:00 +0800
+---
+
+today was pretty chill. i am slowly but surely probably flunking theology but at least i got a 91% on the networking exam. so... worth?
