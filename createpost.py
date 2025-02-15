@@ -99,7 +99,6 @@ title: "{title}"
 date: {time_str}
 categories: [{', '.join(categories)}]
 tags: [{', '.join(tags)}]
-author: Franz Nicholas T. Fortunado
 ---
 
 {processed_content}"""
