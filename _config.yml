@@ -196,6 +196,10 @@ defaults:
       path: "assets/css"
     values:
       cache_control: "no-cache, no-store, must-revalidate"
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
 
 sass:
   style: compressed
